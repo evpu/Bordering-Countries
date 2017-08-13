@@ -33,10 +33,8 @@ data['Value'] = pd.to_numeric(data['Value'])
 data['Year'] = pd.to_numeric(data['Year'])
 
 # ************************************************************************
-# Clean up: change country names so that they match 'country_codes.csv'
+# Clean up: change country names so that they match 'neighbors.csv'
 # ************************************************************************
-
-country_codes = pd.read_csv('country_codes.csv')
 
 # Clean up destination and origin countries
 for X in ['Country / territory of asylum/residence', 'Origin']:
