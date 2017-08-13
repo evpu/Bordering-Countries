@@ -3,6 +3,21 @@ Using a map shapefile one can quickly find countries that are bordering each oth
 
 The code in "find_neighbors.py" uses world shapefile from Natural Earth and outputs a csv with a list of countries and their neighbors.
 
+For example, Afghanistan borders 6 other countries:
+
+| country_name | country_code | neighbor_name | neighbor_code |
+|:-------------|:-------------|:--------------|:--------------|
+| Afghanistan  | AFG          | China         | CHN           |
+| Afghanistan  | AFG          | Iran          | IRN           |
+| Afghanistan  | AFG          | Pakistan      | PAK           |
+| Afghanistan  | AFG          | Tajikistan    | TJK           |
+| Afghanistan  | AFG          | Turkmenistan  | TKM           |
+| Afghanistan  | AFG          | Uzbekistan    | UZB           |
+
+And here are Zambia's neighbors highlighted on a map:
+
+<img src="https://raw.githubusercontent.com/evpu/Bordering-Countries/master/zambia.png" alt="Zambia" width="600">
+
 This allows to quickly count how many neighbors each country has:
 
     import pandas as pd
